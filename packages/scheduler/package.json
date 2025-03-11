@@ -1,0 +1,21 @@
+{
+  "name": "scheduler",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch index.ts"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.7",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@elysiajs/cron": "^1.2.0",
+    "amqplib": "^0.10.5",
+    "elysia": "^1.2.25",
+    "model": "workspace:*"
+  }
+}

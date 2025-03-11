@@ -1,0 +1,18 @@
+{
+  "dbcode.connections": [
+    {
+      "connectionId": "5ajg6HbzW2k0Y79AbsMR1",
+      "name": "Todo",
+      "driver": "postgres",
+      "connectionType": "host",
+      "host": "localhost",
+      "port": 5432,
+      "ssl": false,
+      "username": "postgres",
+      "password": "",
+      "savePassword": "no",
+      "database": "todos",
+      "connectionTimeout": 30
+    }
+  ]
+}
