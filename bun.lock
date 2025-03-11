@@ -20,6 +20,7 @@
     "packages/api": {
       "name": "api",
       "dependencies": {
+        "@elysiajs/cors": "^1.2.0",
         "@elysiajs/swagger": "^1.2.2",
         "elysia": "^1.2.25",
         "model": "workspace:*",
@@ -84,6 +85,8 @@
     "@acuminous/bitsyntax": ["@acuminous/bitsyntax@0.1.2", "", { "dependencies": { "buffer-more-ints": "~1.0.0", "debug": "^4.3.4", "safe-buffer": "~5.1.2" } }, "sha512-29lUK80d1muEQqiUsSo+3A0yP6CdspgC95EnKBMi22Xlwt79i/En4Vr67+cXhU+cZjbti3TgGGC5wy1stIywVQ=="],
 
     "@drizzle-team/brocli": ["@drizzle-team/brocli@0.10.2", "", {}, "sha512-z33Il7l5dKjUgGULTqBsQBQwckHh5AbIuxhdsIxDDiZAzBOrZO6q9ogcWC65kU382AfynTfgNumVcNIjuIua6w=="],
+
+    "@elysiajs/cors": ["@elysiajs/cors@1.2.0", "", { "peerDependencies": { "elysia": ">= 1.2.0" } }, "sha512-qsJwDAg6WfdQRMfj6uSMcDPSpXvm/zQFeAX1uuJXhIgazH8itSfcDxcH9pMuXVRX1yQNi2pPwNQLJmAcw5mzvw=="],
 
     "@elysiajs/cron": ["@elysiajs/cron@1.2.0", "", { "dependencies": { "croner": "^6.0.3" }, "peerDependencies": { "elysia": ">= 1.2.0" } }, "sha512-Xg2bUCZNEp2zRzsYeNQ6BUP3uslF5BEPnuLHLnsytiAEqzFTHzS7813XbmHs8xNZKuUAkAnJNTVnQb1Jt5zTwg=="],
 

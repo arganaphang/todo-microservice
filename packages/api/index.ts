@@ -1,5 +1,6 @@
 import { Elysia, t } from 'elysia'
 import { swagger } from "@elysiajs/swagger"
+import { cors } from "@elysiajs/cors"
 import { eq } from 'drizzle-orm';
 import db, { todos } from 'model';
 import { createClient } from "redis";
@@ -11,6 +12,7 @@ const redisClient = await createClient({
     .connect();
 
 new Elysia()
+    .use(cors())
     .use(swagger({
         documentation: {
             tags: [

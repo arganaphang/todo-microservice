@@ -13,9 +13,10 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "@elysiajs/cors": "^1.2.0",
     "@elysiajs/swagger": "^1.2.2",
     "elysia": "^1.2.25",
-    "redis": "^4.7.0",
-    "model": "workspace:*"
+    "model": "workspace:*",
+    "redis": "^4.7.0"
   }
 }
