@@ -32,7 +32,9 @@ new Elysia()
             }, {
                 body: t.Object({
                     title: t.String(),
-                    is_completed: t.Boolean()
+                    is_completed: t.Boolean({
+                        default: false
+                    })
                 }),
                 detail: { tags: ['Todo'] }
             })

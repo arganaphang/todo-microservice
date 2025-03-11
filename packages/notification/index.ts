@@ -33,7 +33,7 @@ const MAIL_SENDER = 'noreply@domain.com';
 // biome-ignore lint/suspicious/noExplicitAny: <explanation>
 async function sendMail(todos: any) {
     // biome-ignore lint/suspicious/noExplicitAny: <explanation>
-    const listHTML = todos?.map((todo: any) => `<li>${todo?.id} - ${todo?.title} - Completed? ${todo?.is_completed ? 'Yes' : 'NO'}</li>`)
+    const listHTML = todos?.map((todo: any) => `<li>${todo?.id} - ${todo?.title} - Completed? ${todo?.is_completed ? 'Yes' : 'NO'}</li>`)?.join('')
     await mailClient.sendMail({
         from: MAIL_SENDER,
         to: MAIL_SENDER, // TODO: Change This
